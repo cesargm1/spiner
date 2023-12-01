@@ -1,0 +1,26 @@
+body{
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+.spiner{
+    height: 50px;
+    width: 50px;
+    border: 4px solid rgba(190, 179, 179, 0.845);
+    border-top-color: rgb(231, 97, 97);
+    border-bottom-color: rgb(83, 163, 228);
+    border-radius: 50px;
+    scale: 3;
+    animation: spin 1s ease infinite;
+}
+
+@keyframes spin {
+    0%{
+        transform: rotate(0deg);
+
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
